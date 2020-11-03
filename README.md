@@ -1,5 +1,5 @@
 # svgextract
-A script to extract all &lt;svg> tags from a URL
+A script to extract all &lt;svg> tags from a webpage
 
 # Usage
 1. Clone the repository -
