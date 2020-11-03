@@ -50,6 +50,9 @@ class SVGExtractor():
                             margin: 30px;
                             border: 3px solid rgb(252, 173, 3);
                             border-radius: 7px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                         }}
                     </style>
                 </head>
@@ -85,12 +88,12 @@ if __name__ == "__main__":
 
     continue_flag = True
     while continue_flag:
-        page = input('Enter the direct url to the webpage you want to extract svgs from.')
-        file_name = input("Enter a name to save the file as (WITHOUT the extension, the extension will be set to .html automatically)")
-        flag = input('Do you want to open the extracted svgs when done? Y/n')
+        page = input('Enter the direct url to the webpage you want to extract svgs from. - ')
+        file_name = input("Enter a name to save the file as (WITHOUT the extension, the extension will be set to .html automatically) - ")
+        flag = input('Do you want to open the extracted svgs when done? Y/n - ')
         flag = flag.lower().startswith('y')
 
         svge.extract(page, file_name + '.html', flag)
         
-        continue_flag = input("Do you want to extract again? Y/n")
+        continue_flag = input("Do you want to extract again? Y/n - ")
         continue_flag = continue_flag.lower().startswith('y')
